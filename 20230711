@@ -137,3 +137,43 @@ class sixTab extends StatelessWidget {
     return Center(child: Text('다섯번째 페이지'));
   }
 }
+/* 
+$ git init
+*/
+
+/*
+Initialized empty Git repository in C:/Users/PCA/Desktop/flutter/github-test/.gi
+t/
+*/
+
+/*
+$ git remote add origin https://github.com/naebaecamp/github-test.git
+*/
+
+/*
+$ git branch SixTab
+fatal: not a valid object name: 'master'
+*/
+
+PCA@Win10-01 MINGW64 ~/Desktop/flutter/github-test (master)
+$ git config core.autocrlf true
+
+PCA@Win10-01 MINGW64 ~/Desktop/flutter/github-test (master)
+$ git add .
+
+PCA@Win10-01 MINGW64 ~/Desktop/flutter/github-test (master)
+$ git commit -m "initial commit"
+[master (root-commit) 113bd5b] initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 160000 github-test
+
+PCA@Win10-01 MINGW64 ~/Desktop/flutter/github-test (master)
+$ git branch SixTab
+
+PCA@Win10-01 MINGW64 ~/Desktop/flutter/github-test (master)
+$ git switch SixTab
+Switched to branch 'SixTab'
+M       github-test
+
+PCA@Win10-01 MINGW64 ~/Desktop/flutter/github-test (SixTab)
+$
