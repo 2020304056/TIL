@@ -471,3 +471,5 @@ class SixTab extends StatelessWidget {
     );
   }
 }
+// 이름, MBTI, 소개, 스타일, 장점
+// 좌측 상단 화살표 클릭시 홈페이지로 이동하는 기능 추가
