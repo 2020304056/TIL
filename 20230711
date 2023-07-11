@@ -62,16 +62,6 @@ class _HomePageState extends State<HomePage> {
                     children: [
                       Container(
                         alignment: Alignment.topCenter,
-                        child: TabPageSelector(
-                          color: DefaultTabController.of(context)?.index == 1
-                              ? Colors.blue[300]
-                              : Colors.grey[400],
-                          selectedColor:
-                              DefaultTabController.of(context)?.index == 1
-                                  ? Colors.white
-                                  : Colors.blue,
-                          indicatorSize: 8,
-                        ),
                       ),
                     ],
                   ),
@@ -156,8 +146,8 @@ class SixTab extends StatelessWidget {
           Text(
             '소개 | 안녕하세요! 내일배움캠프 7기_Android 9조'
             ' 이상훈입니다!'
-            '아직 미숙하지만'
-            '열심히 하겠습니다!',
+            ' 아직 미숙하지만'
+            ' 열심히 하겠습니다!',
             style: TextStyle(fontSize: 20),
           ),
           Text(
@@ -169,7 +159,7 @@ class SixTab extends StatelessWidget {
           Text(
             '장점 | 기억력이 좋다. 근면성실하다. 책임감이 강하다. '
             '인내력이 강하다. 정직하다. 체계적이고 논리적이다. '
-            '규칙과 약속을 잘 지킨다. ',
+            '실수한 것에 대해 즉각 수정한다. ',
             style: TextStyle(fontSize: 20),
           ),
           Text(
@@ -181,6 +171,7 @@ class SixTab extends StatelessWidget {
     );
   }
 }
+
 /* 
 $ git init
 */
