@@ -7,7 +7,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -35,6 +34,14 @@ class _HomePageState extends State<HomePage> {
         });
 
         return Scaffold(
+          appBar: AppBar(
+            leading: IconButton(
+              icon: Icon(Icons.arrow_back),
+              onPressed: () {
+                // Perform navigation or any other action
+              },
+            ),
+          ),
           body: Stack(
             children: [
               TabBarView(
@@ -42,9 +49,9 @@ class _HomePageState extends State<HomePage> {
                   FirstTab(),
                   SecondTab(),
                   ThirdTab(),
-                  fourTab(),
-                  fiveTab(),
-                  sixTab(),
+                  FourTab(),
+                  FiveTab(),
+                  SixTab(),
                 ],
               ),
               SafeArea(
@@ -109,8 +116,8 @@ class ThirdTab extends StatelessWidget {
 }
 
 // 4번째 페이지
-class fourTab extends StatelessWidget {
-  const fourTab({Key? key}) : super(key: key);
+class FourTab extends StatelessWidget {
+  const FourTab({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -119,8 +126,8 @@ class fourTab extends StatelessWidget {
 }
 
 // 5번째 페이지
-class fiveTab extends StatelessWidget {
-  const fiveTab({Key? key}) : super(key: key);
+class FiveTab extends StatelessWidget {
+  const FiveTab({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -129,12 +136,49 @@ class fiveTab extends StatelessWidget {
 }
 
 // 6번째 페이지
-class sixTab extends StatelessWidget {
-  const sixTab({Key? key}) : super(key: key);
+class SixTab extends StatelessWidget {
+  const SixTab({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Center(child: Text('다섯번째 페이지'));
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(
+            '팀원 | 이상훈',
+            style: TextStyle(fontSize: 20),
+          ),
+          Text(
+            'MBTI | ISTJ',
+            style: TextStyle(fontSize: 20),
+          ),
+          Text(
+            '소개 | 안녕하세요! 내일배움캠프 7기_Android 9조'
+            ' 이상훈입니다!'
+            '아직 미숙하지만'
+            '열심히 하겠습니다!',
+            style: TextStyle(fontSize: 20),
+          ),
+          Text(
+            '스타일 | 좋은 의견이 있으면 수용한다. '
+            '팀원과 좋은 관계를 유지하려 합니다. '
+            '먼저 의견을 제시하기보다는 경청부터 합니다.',
+            style: TextStyle(fontSize: 20),
+          ),
+          Text(
+            '장점 | 기억력이 좋다. 근면성실하다. 책임감이 강하다. '
+            '인내력이 강하다. 정직하다. 체계적이고 논리적이다. '
+            '규칙과 약속을 잘 지킨다. ',
+            style: TextStyle(fontSize: 20),
+          ),
+          Text(
+            '블로그: https://velog.io/@sanghoon_2',
+            style: TextStyle(fontSize: 20),
+          ),
+        ],
+      ),
+    );
   }
 }
 /* 
