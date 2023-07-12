@@ -1,5 +1,5 @@
 // main.dart 소스코드
-// 색상수정
+// 서브 색상수정
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'sub3.dart';
